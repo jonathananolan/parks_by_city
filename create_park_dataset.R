@@ -36,7 +36,7 @@ city_summaries <- parks_data %>%
 
 
 city_summaries %>% qsave("city_summaries.qs")
-
+city_summaries %>% write_csv("city_summaries.csv")
 geonames <- unique(parks_data$geoname_id)
 
 
